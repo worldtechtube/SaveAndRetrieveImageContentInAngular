@@ -1,0 +1,11 @@
+<h1>Send & Receive image files in request!</h1>
+<input type="file" (change)="onFileSelected($event)" multiple="multiple">
+<input type="button" value="upload" (click)="onUpload()"><br><br>
+<input type="button" value="Set & Show Images via Wallpaper Objects" (click)="setImage()">
+ <br>&nbsp;&nbsp;&nbsp;&nbsp;<br>
+<img [src]="image[0]" height="100px" width="100px"/>&nbsp;&nbsp;&nbsp;&nbsp;
+<img [src]="image[1]" height="100px" width="100px"/>&nbsp;&nbsp;&nbsp;&nbsp;
+<img [src]="image[2]" height="100px" width="100px"/><br><br><br>
+<input type="button" value="Set Single Image via HTTPResponse" (click)="setSingleImage(wallpaperId.value)">
+<br>Enter Id:<input type="number" #wallpaperId><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<img [src]="image[3]" height="100px" width="100px" />
